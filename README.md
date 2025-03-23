@@ -1,2 +1,2 @@
-# tihs-python
-python：國立成功大學附屬臺南工業高級中等學校(Tainan Industrial Senior High School of National Cheng Kung University)
+- 日期預計為4/11、4/18、4/25、5/2、5/23、6/6、6/13、6/20 共八周，16小時。
+
