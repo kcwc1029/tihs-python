@@ -1,5 +1,4 @@
-print(1+2)
-print(3*5)
-print(7/2)
-print(7%2)
-print("")
+num = 1
+while num<5:
+    print(f"{num} 雷姆好可愛")
+    num += 1 # num = num + 1

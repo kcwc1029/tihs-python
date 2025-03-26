@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "week01/安裝thonny.md",
+                "file": "week01/基本.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "安裝thonny"
+              "title": "基本"
             }
           }
         ]
@@ -138,13 +138,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "week01/安裝thonny.md",
+                "file": "week01/基本.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "安裝thonny 的大綱"
+              "title": "基本 的大綱"
             }
           }
         ],
@@ -152,7 +152,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 326.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -166,10 +166,10 @@
   },
   "active": "3fa6783af230dcf5",
   "lastOpenFiles": [
+    "week01/安裝thonny.md",
     "week01/基本.md",
     "week01/attachments/Pasted image 20250324164440.png",
     "week01/attachments",
-    "week01/安裝thonny.md",
     "test.py",
     "README.md",
     "week01",
