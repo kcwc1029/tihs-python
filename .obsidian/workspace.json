@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 312.5
+    "width": 200
   },
   "right": {
     "id": "8d7f124c8bc7eb67",
@@ -166,6 +166,7 @@
   },
   "active": "3fa6783af230dcf5",
   "lastOpenFiles": [
+    "南工.drawio",
     "week01/安裝thonny.md",
     "week01/基本.md",
     "week01/attachments/Pasted image 20250324164440.png",
