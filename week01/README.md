@@ -134,7 +134,49 @@ if = 0 # 保留字不可以使用
 
 晉賢
 
-## 4. 條件句 if/else
+
+
+## 4. 輸入資料(input)
+程序在執行時，會有【等待使用者】輸入的時機
+我們要如何時做呢
+
+```python
+n = input("這邊可以輸入你要的資料：")
+print(n)
+print(type(n))
+
+# 這邊可以輸入你要的資料：45
+# 45
+# <class 'str'>
+```
+
+這邊可以發現，我在讀取之後，讀取進來的資料是【string(字串)】(是不能做加減計算的)
+如果我要的是，可以計算的【數值】=> 【integer(整數)】
+
+```python
+n = int(input("這邊可以輸入你要的資料："))
+print(n)
+print(type(n))
+
+# 這邊可以輸入你要的資料：0123
+# 123
+# <class 'int'>
+```
+
+上述是提到【字串轉整數】，如果是【整數轉字串】呢
+```python
+n = int(input("這邊可以輸入你要的資料："))
+print(type(n))
+m = str(n)
+print(m)
+print(type(m))
+
+# 這邊可以輸入你要的資料：16
+# <class 'int'>
+# 16
+# <class 'str'>
+```
+## 5. 條件句 if/else
 
 這是助教在【Re:從零開始的異世界生活】最喜歡的三個角色(阿還有愛姬多那)
 
@@ -177,15 +219,27 @@ else:
 做個小題目
 然後輸出要長怎樣
 
-> [!EXAMPLE] Lab
-> 題目
-> 應該要輸出甚麼
+> [!EXAMPLE] Lab：【猜燈謎遊戲】
+> 我們來寫個【猜燈謎遊戲】
+> 會有一個題目敘述，玩家可以輸入答案。程式會去比較玩家輸入與答案，並輸出「答對了」或「答錯了」。
+```python
+# Answer
+ans = "圍巾"
+question = "天天跟你黏一起，天冷時才想起。（猜一衣物）"
+
+print(question)
+n = input()
+if n == ans:
+    print("答對了")
+else:
+    print("答錯了")
+```
 
 > [!EXAMPLE] Lab
 > 題目
 > 應該要輸出甚麼
 
-## 5. 列表
+## 6. 列表
 
 > [!NOTE] 補充
 > 在 python 當中，他叫列表(list)
@@ -233,15 +287,15 @@ print(student[-2]) # 拉姆
 
 進賢：利用 if else+list 出 2-3 題小題目，給他們練習
 
-> [!EXAMPLE] Lab
-> 題目
+> [!EXAMPLE] 
+> 
 > 應該要輸出甚麼
 
 > [!EXAMPLE] Lab
 > 題目
 > 應該要輸出甚麼
 
-## 6. 迴圈
+## 7. 迴圈
 
 如果我今天想【跑一遍陣列】，就要使用到迴圈
 迴圈的意思，就是說【要做重複的事】
@@ -250,7 +304,7 @@ print(student[-2]) # 拉姆
 -   for 迴圈：我知道我要【做幾次】
 -   while 迴圈：只要【符合一個條件】，我就一直做
 
-### 6.1. for 迴圈
+### 7.1. for 迴圈
 
 <img src="https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250326_1742973023.png" height="400">
 
@@ -283,15 +337,35 @@ for i in range(1,10, 2):
 
 進賢：利用 for 出 2 題小題目，給他們練習
 
-> [!EXAMPLE] Lab
-> 題目
-> 應該要輸出甚麼
+> [!EXAMPLE] Lab：【猜燈謎遊戲】
+> 如果我們今天要做的猜燈謎遊戲，我想要一次玩5關呢
+
+```python
+question = [
+    "天天跟你黏一起，天冷時才想起。（猜一衣物）",
+    "什麼東西越洗越髒",
+    "哪一條線永遠不會有結",
+    "你的右邊臉頰長得像什麼？",
+    "哪尊神明不喜歡吵鬧"
+]
+
+ans = ["圍巾","水","時間線", "像你的左邊臉頰", "觀世音"]
+
+for i in range(len(question)):
+    print(question[i])
+    n = input()
+    if n == ans[i]:
+        print("答對了")
+    else:
+        print("答錯了")
+```
+
 
 > [!EXAMPLE] Lab
 > 題目
 > 應該要輸出甚麼
 
-### 6.2. while 迴圈
+### 7.2. while 迴圈
 
 <img src="https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250326_1742973796.png" height="400">
 
@@ -325,7 +399,7 @@ while num<5:
 > 題目
 > 應該要輸出甚麼
 
-### 6.3. break
+### 7.3. break
 
 <img src="https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250326_1742974148.png" height="400">
 
@@ -352,7 +426,7 @@ while num<5:
 > 題目
 > 應該要輸出甚麼
 
-### 6.4. continue
+### 7.4. continue
 
 ```python
 num = 0
@@ -381,14 +455,14 @@ while num < 5:
 > 題目
 > 應該要輸出甚麼
 
-## 7. 函數
+## 8. 函數
 
 函數就是把一段常常會用的動作，打包成一個你自己取的名字，以後想用就「叫名字」就好！
 
 > 就像是煮雞湯，如果你都是從菜市場買雞肉回來熬，就是會比較麻煩。
 > 如果先一次煮多一些，然後把他拿去冷凍做成雞湯塊，有需要使用，再從冷凍庫拿出來，這樣 484 會比較輕鬆
 
-### 7.1. 函數的語法
+### 8.1. 函數的語法
 
 -   分為「定義函數」跟「呼叫函數」
 
@@ -429,7 +503,7 @@ chicken_soup() # 雷姆好可愛
 > 題目
 > 應該要輸出甚麼
 
-### 7.2. 參數
+### 8.2. 參數
 
 在認識完基本函數後，我們來做個不一樣的變化
 假設我今天要做一個函數，這個函數的任務是【接收兩個數字，然後把兩數相加，這個數字就是決定，輸出“拉姆好可愛”的次數】
@@ -480,7 +554,7 @@ cute(a=1, b=2)
 > 題目
 > 應該要輸出甚麼
 
-### 7.3. 回傳
+### 8.3. 回傳
 
 目前的函數，大概是長這樣
 <img src="https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250326_1742981486.png" height="300">

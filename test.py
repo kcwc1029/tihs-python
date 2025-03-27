@@ -1,22 +1,9 @@
-##### 函數：輸出 #####
-def while_print(num):
-    i = 0
-    while i<num:
-        print(f"{i} 拉姆好可愛")
-        i+=1
-    print()
+a_pos = 6 # A的位置
+b_pos = 3 # B的位置
+all_pos = 30 # 地圖路徑
 
-##### 相加 #####
-def cute(a, b):
-    c = a + b
-    return c
-    
-##### 主程式 #####
-temp = cute(1, 1)
-ans = cute(temp, temp)
-while_print(ans)
+def f(a, b, all):
+    print("起點" + "*" * (a-1) + "A" + "*" * (all-a) + "終點")
+    print("起點" + "*" * (b-1) + "B" + "*" * (all-b) + "終點") 
 
-# 0 拉姆好可愛
-# 1 拉姆好可愛
-# 2 拉姆好可愛
-# 3 拉姆好可愛
+f(a_pos, b_pos, all_pos)
