@@ -9,6 +9,8 @@ def check():
 root = tkinter.Tk()
 root.title("取得勾選狀態")
 root.geometry("400x200")
+
+
 cval = tkinter.BooleanVar()
 cval.set(False)
 cbtn = tkinter.Checkbutton(text="勾選按鈕", variable=cval, command=check)

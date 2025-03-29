@@ -1,9 +1,16 @@
-a_pos = 6 # A的位置
-b_pos = 3 # B的位置
-all_pos = 30 # 地圖路徑
+import tkinter
+# 執行程式，每秒遞增並顯示
+time = 0
+def count_up():
+    time += 1
+    label["text"] = time
+    root.after(1000, count_up) # 經過一秒，執行count_up()
 
-def f(a, b, all):
-    print("起點" + "*" * (a-1) + "A" + "*" * (all-a) + "終點")
-    print("起點" + "*" * (b-1) + "B" + "*" * (all-b) + "終點") 
+# 建立視窗
+root = tkinter.Tk()
+# 建立標籤
+label = tkinter.Label(font=("Times New Roman", 80))
+label.pack()
 
-f(a_pos, b_pos, all_pos)
+root.after(1000, count_up) # 經過一秒，執行count_up()
+root.mainloop()
