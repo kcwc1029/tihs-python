@@ -1,10 +1,11 @@
 ## 1. 建立輸入欄位
+
 文字輸入欄位可以分為：
-- 單列輸入Entry
-- 多列輸入Text
 
+-   單列輸入 Entry
+-   多列輸入 Text
 
-### 1.1. 單列輸入Entry
+### 1.1. 單列輸入 Entry
 
 ```python
 import tkinter
@@ -22,9 +23,9 @@ root.mainloop()
 
 ![upgit_20250330_1743271443.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250330_1743271443.png)
 
+### 1.2. 操作 Entry 的字串
 
-### 1.2. 操作Entry的字串
-Entry的字串可以透過get()取得
+Entry 的字串可以透過 get()取得
 我們來試試【按下按鈕後，輸出文字，並把按鈕上的文字也改掉】
 
 ```python
@@ -50,7 +51,8 @@ button.place(x=20, y=100)
 root.mainloop()
 ```
 
-### 1.3. 多列輸入Text
+### 1.3. 多列輸入 Text
+
 我們來試試在多行欄位中，連續輸入文字。
 
 ```python
@@ -74,6 +76,7 @@ root.mainloop()
 ```
 
 ## 2. 建立勾選按鈕(checkbutton)
+
 ```python
 import tkinter
 
@@ -87,7 +90,9 @@ cbtn = tkinter.Checkbutton(text="勾選按鈕")
 cbtn.pack()
 root.mainloop()
 ```
+
 ### 2.1. 一開始決定勾選狀態
+
 ```python
 import tkinter
 
@@ -103,7 +108,6 @@ cbtn = tkinter.Checkbutton(text="勾選按鈕", variable=cval)
 cbtn.pack()
 root.mainloop()
 ```
-
 
 ### 2.2. 取得勾選狀態
 
@@ -131,12 +135,14 @@ root.mainloop()
 ```
 
 ## 3. 彈出訊息視窗
-要利用tkinter.messagebox模組
-- showinfo()：顯示 資訊訊息（一般提示）
-- showwarning()：顯示 警告訊息（例如提醒用戶）
-- showerror()：顯示 錯誤訊息（例如發生錯誤）
-- askyesno()	：顯示「是 / 否」按鈕，回傳 True 或 False
-- askokcancel()：顯示「確定 / 取消」按鈕，回傳 True 或 False
+
+要利用 tkinter.messagebox 模組
+
+-   showinfo()：顯示 資訊訊息（一般提示）
+-   showwarning()：顯示 警告訊息（例如提醒用戶）
+-   showerror()：顯示 錯誤訊息（例如發生錯誤）
+-   askyesno() ：顯示「是 / 否」按鈕，回傳 True 或 False
+-   askokcancel()：顯示「確定 / 取消」按鈕，回傳 True 或 False
 
 ```python
 import tkinter
@@ -163,6 +169,7 @@ root.mainloop()
 ## 4. Lab：詢問遊戲(Quiz)
 
 ### 4.1. 建立視窗的背景
+
 -   程式碼：quiz01.py
 -   不用寫程式，只要開啟檔案，並執行即可
 
@@ -186,10 +193,13 @@ text = tkinter.Text(width=40, height=5, font=("Times New Roman", 16))
 text.place(x=320, y=30)
 root.mainloop()
 ```
+
 ![upgit_20250330_1743272906.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250330_1743272906.png)
 
 ### 4.2. 配置勾選按鈕
+
 你在視窗上看的勾選框，其實是分為
+
 -   程式碼：quiz02.py
 -   不用寫程式，只要開啟檔案，並執行即可
 
@@ -230,14 +240,14 @@ for i, item in enumerate(items):
     chk = tkinter.Checkbutton(text=item, font=("Times New Roman", 12), variable=var, bg="#dfe")
     chk.place(x=400, y=160 + i * 40)
     check_vars.append(var)
-    
+
 root.mainloop()
 ```
 
 ![upgit_20250330_1743274263.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250330_1743274263.png)
 
-
 ### 4.3. 增加按鈕反應
+
 -   程式碼：quiz03.py
 -   不用寫程式，只要開啟檔案，並執行即可
 
@@ -247,9 +257,9 @@ import tkinter
 # FIXED: 增加下面程式碼
 def click_btn():
     # 計算有幾個 True（有勾選）
-    score = sum(var.get() for var in check_vars)  
+    score = sum(var.get() for var in check_vars)
     result = f"你總共勾選了 {score} 項行為喵！"
-    
+
     # 清除舊內容，插入新內容
     text.delete("1.0", tkinter.END) # 刪除文字(從第1行第0個字，到最後)
     text.insert(tkinter.END, result) # 再把最新的文字插入到文字框
@@ -288,21 +298,24 @@ for i, item in enumerate(items):
     chk = tkinter.Checkbutton(text=item, font=("Times New Roman", 12), variable=var, bg="#dfe")
     chk.place(x=400, y=160 + i * 40)
     check_vars.append(var)
-    
+
 root.mainloop()
 ```
+
 ![upgit_20250330_1743274088.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250330_1743274088.png)
 
 ### 4.4. 依據不同數量給出評語
+
 -   程式碼：quiz04.py
 -   不用寫程式，只要開啟檔案，並執行即可
+
 ```python
 import tkinter
 
 # FIXED: 增加下面程式碼
 def click_btn():
     # 計算有幾個 True（有勾選）
-    score = sum(var.get() for var in check_vars)  
+    score = sum(var.get() for var in check_vars)
     result = ""
     if score == 0:
         result = "你連貓的呼嚕聲都不會模仿，這輩子離貓最接近的時刻可能是看貓貓迷因。"
@@ -357,22 +370,25 @@ for i, item in enumerate(items):
     chk = tkinter.Checkbutton(text=item, font=("Times New Roman", 12), variable=var, bg="#dfe")
     chk.place(x=400, y=160 + i * 40)
     check_vars.append(var)
-    
+
 root.mainloop()
 ```
 
 ![upgit_20250330_1743274717.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250330_1743274717.png)
 
 ## 5. 即時處理？
+
 遊戲在執行中，會不斷進行多項處理，不管玩家有沒有操作。
 系統會根據「時間順序」持續執行相關功能。
 常見的即時處理內：
-- 敵人會在畫面上持續移動
-- 背景動畫(像雲飄動、水面搖晃，背景也會不停變化)
-- 如果是限時遊戲，計時器會持續倒數
-- 玩家不操作時處理：即使玩家沒有動作，遊戲仍在持續進行處理
 
-### 5.1. 使用after()
+-   敵人會在畫面上持續移動
+-   背景動畫(像雲飄動、水面搖晃，背景也會不停變化)
+-   如果是限時遊戲，計時器會持續倒數
+-   玩家不操作時處理：即使玩家沒有動作，遊戲仍在持續進行處理
+
+### 5.1. 使用 after()
+
 ```python
 import tkinter
 # 執行程式，每秒遞增並顯示
@@ -392,6 +408,7 @@ label.pack()
 root.after(1000, count_up) # 經過一秒，執行count_up()
 root.mainloop()
 ```
+
 ### 5.2. 全域變數&區域變數
 
 ![upgit_20250330_1743275197.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250330_1743275197.png)
@@ -399,10 +416,3 @@ root.mainloop()
 ![upgit_20250330_1743275737.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250330_1743275737.png)
 
 ![upgit_20250330_1743275819.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250330_1743275819.png)
-
-
-
-
-
-
-

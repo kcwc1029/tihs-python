@@ -1,7 +1,7 @@
 到這邊的話，代表你們已經安裝完了
 總之，當你們成功看到這串文字時，就代表你們已經成功了 XD
 
-<img src="https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250323_1742717740.png" width="400px">
+![image|467x414](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250323_1742717740.png)
 
 > [!NOTE] 補充
 > 這部動畫較【Re:從零開始的異世界生活】
@@ -26,7 +26,7 @@ print("助教好可愛")
 > [!info] 補充：
 > 整數(int)、浮點數(float)
 
-那如果我來做一些奇怪的事怎麼樣 ww
+那如果我來做一些奇怪的事怎麼樣 ，像是ww
 
 ```py
 print(10/0)
@@ -391,7 +391,9 @@ num = 1
 while num<5:
     print(f"{num} 雷姆好可愛")
 ```
+
 晉賢
+
 > [!EXAMPLE] Lab
 > 題目
 > 應該要輸出甚麼
