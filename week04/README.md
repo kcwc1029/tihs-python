@@ -3,6 +3,7 @@
 - 單列輸入Entry
 - 多列輸入Text
 
+
 ### 1.1. 單列輸入Entry
 
 ```python
@@ -293,6 +294,8 @@ root.mainloop()
 ![upgit_20250330_1743274088.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250330_1743274088.png)
 
 ### 4.4. 依據不同數量給出評語
+-   程式碼：quiz04.py
+-   不用寫程式，只要開啟檔案，並執行即可
 ```python
 import tkinter
 

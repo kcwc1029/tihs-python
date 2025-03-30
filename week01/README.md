@@ -391,7 +391,7 @@ num = 1
 while num<5:
     print(f"{num} 雷姆好可愛")
 ```
-
+晉賢
 > [!EXAMPLE] Lab
 > 題目
 > 應該要輸出甚麼

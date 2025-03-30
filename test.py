@@ -1,16 +1,28 @@
 import tkinter
-# 執行程式，每秒遞增並顯示
-time = 0
-def count_up():
-    time += 1
-    label["text"] = time
-    root.after(1000, count_up) # 經過一秒，執行count_up()
 
-# 建立視窗
+# 建立視窗物件
 root = tkinter.Tk()
-# 建立標籤
-label = tkinter.Label(font=("Times New Roman", 80))
-label.pack()
+root.title("顯示迷宮")
 
-root.after(1000, count_up) # 經過一秒，執行count_up()
+# 建立畫布
+canvas = tkinter.Canvas(width=800, height=560, bg="white")
+canvas.pack()
+
+maze = [
+    [1,1,1,1,1,1,1,1,1,1],
+    [1,0,0,0,0,0,1,0,0,1],
+    [1,0,1,1,0,0,1,0,0,1],
+    [1,0,0,1,0,0,0,0,0,1],
+    [1,0,0,1,1,1,1,1,0,1],
+    [1,0,0,0,0,0,0,0,0,1],
+    [1,1,1,1,1,1,1,1,1,1]
+    ]
+
+# 使用雙層迴圈走訪迷宮資料
+for y in range(7):
+    for x in range(10):
+        if maze[y][x] == 1:
+            # 畫出灰色方塊，位置為 (x*80, y*80)，每格是 80x80 大小
+            canvas.create_rectangle(x*80, y*80, x*80+80, y*80+80, fill="gray")
+
 root.mainloop()

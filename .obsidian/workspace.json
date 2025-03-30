@@ -4,16 +4,30 @@
     "type": "split",
     "children": [
       {
-        "id": "4ad84060530c189c",
+        "id": "2b7e5835382db285",
         "type": "tabs",
         "children": [
           {
-            "id": "41a24aa7d3cd8877",
+            "id": "269069a841843af5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "week05/README.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
+            }
+          },
+          {
+            "id": "69d6eaa316640bc7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "week03/README.md",
                 "mode": "source",
                 "source": false
               },
@@ -166,10 +180,16 @@
       "marp:Marp: Open Preview": false
     }
   },
-  "active": "41a24aa7d3cd8877",
+  "active": "269069a841843af5",
   "lastOpenFiles": [
-    "week04/README.md",
+    "week03/README.md",
     "week05/README.md",
+    "week04/README.md",
+    "week01/README.md",
+    "week05/mimi.png",
+    "week05/cat_move01.py",
+    "week05/test.py",
+    "week02/README.md",
     "week05",
     "week04/quiz04.py",
     "week04/quiz03 copy.py",
@@ -177,20 +197,15 @@
     "week04/quiz02 copy.py",
     "week04/quiz02.py",
     "week04/quiz01 copy.py",
-    "week03/README.md",
     "week04/sumire.png",
     "week04/quiz01.py",
-    "week04/list0705_1.py",
     "README.md",
-    "week04",
-    "week02/README.md",
     "week03/miko.png",
     "week03/img.png",
     "img.png",
     "img.jpg",
     "week03/img.jpg",
     "week03/圖片.jpg",
-    "week01/README.md",
     "week02/attachments/Pasted image 20250326184801.png",
     "week01/基本.md",
     "week01/安裝thonny.md",
@@ -200,7 +215,6 @@
     "計算機結構組織/計算機結構v2.md",
     "2025就業博覽會.md",
     "計算機結構組織/計算機結構v1.md",
-    "作業系統/attachments/Pasted image 20250310143833.png",
     "未命名.md",
     "Docker/README.md",
     "c++/【12 Introduction to Classes, Objects and Strings】.md",
@@ -212,7 +226,6 @@
     "Docker/Nodejs App Start Setup/node_modules/statuses/HISTORY.md",
     "Docker/Nodejs App Start Setup/node_modules/side-channel/CHANGELOG.md",
     "Docker/Nodejs App Start Setup/node_modules/toidentifier/README.md",
-    "Docker/Nodejs App Start Setup/node_modules/side-channel/README.md",
-    "Docker/Nodejs App Start Setup/node_modules/parseurl/README.md"
+    "Docker/Nodejs App Start Setup/node_modules/side-channel/README.md"
   ]
 }
