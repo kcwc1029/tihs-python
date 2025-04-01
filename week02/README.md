@@ -1,3 +1,362 @@
+
+## 7. 列表
+
+> [!NOTE] 補充
+> 在 python 當中，他叫列表(list)
+> 在其他程式中，他叫陣列(array)
+
+今天助教想要將大家的名字儲存起來，那你覺得助教應該怎麼做
+像這樣嗎？
+
+```python
+student00 = "菜月昴"
+student01 = "愛蜜莉雅"
+student02 = "帕克"
+student03 = "雷姆"
+student04 = "拉姆"
+student05 = "艾姬多娜"
+
+print(student05) # 艾姬多娜
+```
+
+這個時候，你是不是在心裡 OS
+
+> 如果我有 100 個，我不就要做一百次資料嗎...
+
+助教有聽到你的疑問了~。這時候，我們又要用這個東西：陣列
+
+<img src="https://i.pinimg.com/736x/21/e1/02/21e1029e0ded502d16674bb82806f051.jpg" height="300">
+
+<img src="https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250323_1742721868.png" height="150">
+
+> [!NOTE] 補充
+>
+> 其實呀，學程式這件事，他就是在電腦裡面，去做各式各樣的容器與指令
+> 這邊提到的容器，指的就是裝資料的方式
+> 如果未來你得的是資訊相關科系，就會碰到大名鼎鼎的課程【資料結構】
+
+```python
+student = ["菜月昴","愛蜜莉雅","帕克","雷姆","拉姆","艾姬多娜"]
+
+print(student[0]) # 菜月昴
+print(student[3]) # 雷姆
+
+print(student[-1]) # 艾姬多娜
+print(student[-2]) # 拉姆
+```
+
+進賢：利用 if else+list 出 2-3 題小題目，給他們練習
+
+> [!EXAMPLE]
+>
+> 應該要輸出甚麼
+
+> [!EXAMPLE] Lab
+> 題目
+> 應該要輸出甚麼
+
+## 8. 迴圈
+
+如果我今天想【跑一遍陣列】，就要使用到迴圈
+迴圈的意思，就是說【要做重複的事】
+迴圈有兩種，分別為：
+
+-   for 迴圈：我知道我要【做幾次】
+-   while 迴圈：只要【符合一個條件】，我就一直做
+
+### 8.1. for 迴圈
+
+<img src="https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250326_1742973023.png" height="400">
+
+```python
+for i in range(5):
+    print(f"{i} 雷姆好可愛")
+    # 如果你要他不換行的話
+    # print("雷姆好可愛", end=" ")
+
+# 0 雷姆好可愛
+# 1 雷姆好可愛
+# 2 雷姆好可愛
+# 3 雷姆好可愛
+# 4 雷姆好可愛
+```
+
+```python
+for i in range(1,10):
+    print(f"{i} 雷姆好可愛", end=" ")
+
+#  雷姆好可愛 2 雷姆好可愛 3 雷姆好可愛 4 雷姆好可愛 5 雷姆好可愛 6 雷姆好可愛 7 雷姆好可愛 8 雷姆好可愛 9 雷姆好可愛
+```
+
+```python
+for i in range(1,10, 2):
+    print(f"{i} 雷姆好可愛", end=" ")
+
+# 1 雷姆好可愛 3 雷姆好可愛 5 雷姆好可愛 7 雷姆好可愛 9 雷姆好可愛
+```
+
+進賢：利用 for 出 2 題小題目，給他們練習
+
+> [!EXAMPLE] Lab：【猜燈謎遊戲】
+> 如果我們今天要做的猜燈謎遊戲，我想要一次玩 5 關呢
+
+```python
+question = [
+    "天天跟你黏一起，天冷時才想起。（猜一衣物）",
+    "什麼東西越洗越髒",
+    "哪一條線永遠不會有結",
+    "你的右邊臉頰長得像什麼？",
+    "哪尊神明不喜歡吵鬧"
+]
+
+ans = ["圍巾","水","時間線", "像你的左邊臉頰", "觀世音"]
+
+for i in range(len(question)):
+    print(question[i])
+    n = input()
+    if n == ans[i]:
+        print("答對了")
+    else:
+        print("答錯了")
+```
+
+> [!EXAMPLE] Lab
+> 題目
+> 應該要輸出甚麼
+
+### 8.2. while 迴圈
+
+<img src="https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250326_1742973796.png" height="400">
+
+```python
+num = 1
+while num<5:
+    print(f"{num} 雷姆好可愛")
+    num += 1 # num = num + 1
+
+# 1 雷姆好可愛
+# 2 雷姆好可愛
+# 3 雷姆好可愛
+# 4 雷姆好可愛
+```
+
+while 迴圈有一個很危險的動作，請大家一定要注意
+while 迴圈的條件，一定要滿足，他才會結束；如果沒有讓它結束，他就會一直一直一直做同一件事 => 無限迴圈(這是很不好的！！！)
+
+```python
+# 這行讓助教先示範，不要自己操作
+num = 1
+while num<5:
+    print(f"{num} 雷姆好可愛")
+```
+
+晉賢
+
+> [!EXAMPLE] Lab
+> 題目
+> 應該要輸出甚麼
+
+> [!EXAMPLE] Lab
+> 題目
+> 應該要輸出甚麼
+
+### 8.3. break
+
+<img src="https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250326_1742974148.png" height="400">
+
+```python
+num = 0
+while num<5:
+    if num ==3:
+        break
+    print(f"{num} 雷姆好可愛")
+    num += 1 # num = num + 1
+
+# 0 雷姆好可愛
+# 1 雷姆好可愛
+# 2 雷姆好可愛
+```
+
+進賢：利用 for 出 2 題小題目，給他們練習
+
+> [!EXAMPLE] Lab
+> 題目
+> 應該要輸出甚麼
+
+> [!EXAMPLE] Lab
+> 題目
+> 應該要輸出甚麼
+
+### 8.4. continue
+
+```python
+num = 0
+while num < 5:
+    if num == 3:
+        num += 1  # 先加，再跳過
+        continue
+    print(f"{num} 雷姆好可愛")
+    num += 1
+
+# 0 雷姆好可愛
+# 1 雷姆好可愛
+# 2 雷姆好可愛
+# 4 雷姆好可愛
+```
+
+<img src="https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250326_1742974688.png" height="400">
+
+進賢：利用 for 出 2 題小題目，給他們練習
+
+> [!EXAMPLE] Lab
+> 題目
+> 應該要輸出甚麼
+
+> [!EXAMPLE] Lab
+> 題目
+> 應該要輸出甚麼
+
+## 9. 函數
+
+函數就是把一段常常會用的動作，打包成一個你自己取的名字，以後想用就「叫名字」就好！
+
+> 就像是煮雞湯，如果你都是從菜市場買雞肉回來熬，就是會比較麻煩。
+> 如果先一次煮多一些，然後把他拿去冷凍做成雞湯塊，有需要使用，再從冷凍庫拿出來，這樣 484 會比較輕鬆
+
+### 9.1. 函數的語法
+
+-   分為「定義函數」跟「呼叫函數」
+
+```python
+##### 定義函數 #####
+def cute():
+	# 這個函數要做的事
+	print("雷姆好可愛")
+
+##### 呼叫函數 #####
+cute() # 雷姆好可愛
+cute() # 雷姆好可愛
+cute() # 雷姆好可愛
+cute() # 雷姆好可愛
+cute() # 雷姆好可愛
+```
+
+-   再用【煮雞湯】舉個例
+
+```python
+##### 定義函數 #####
+def chicken_soup():
+	# 這個函數要做的事
+	print("備料")
+	print("汆燙雞肉")
+	print("加水煮湯")
+	print("轉小火慢燉")
+	print("調味與撈油")
+
+
+##### 主程式 #####
+chicken_soup() # 雷姆好可愛
+```
+
+進賢：利用 for 出 2 題小題目，給他們練習
+
+> [!EXAMPLE] Lab
+> 題目
+> 應該要輸出甚麼
+
+### 9.2. 參數
+
+在認識完基本函數後，我們來做個不一樣的變化
+假設我今天要做一個函數，這個函數的任務是【接收兩個數字，然後把兩數相加，這個數字就是決定，輸出“拉姆好可愛”的次數】
+
+```python
+def cute(a, b):
+    c = a + b
+    for i in range(c):
+        print("拉姆好可愛")
+    print()
+
+##### 主程式 #####
+cute(1, 0)
+
+cute(a=1, b=2)
+```
+
+那其實你可以發現，cute()他裡面就是做兩件事
+
+-   做加法
+-   輸出
+    那狠一點，可以把兩件事都去做成函數
+
+```python
+##### 函數：輸出 #####
+def while_print(num):
+    i = 0
+    while i<num:
+        print(f"{i} 拉姆好可愛")
+        i+=1
+    print()
+
+##### 相加 #####
+def cute(a, b):
+    c = a + b
+    while_print(c)
+
+
+##### 主程式 #####
+cute(1, 0)
+
+cute(a=1, b=2)
+```
+
+進賢：利用 for 出 2 題小題目，給他們練習
+
+> [!EXAMPLE] Lab
+> 題目
+> 應該要輸出甚麼
+
+### 9.3. 回傳
+
+目前的函數，大概是長這樣
+<img src="https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250326_1742981486.png" height="300">
+
+那~我希望他是，呼叫函數之後，函數執行完的結果，可以傳回主程式（或是在傳給其他函數）
+
+<img src="https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250326_1742981721.png" height="300">
+
+```python
+##### 函數：輸出 #####
+def while_print(num):
+    i = 0
+    while i<num:
+        print(f"{i} 拉姆好可愛")
+        i+=1
+    print()
+
+##### 相加 #####
+def cute(a, b):
+    c = a + b
+    return c
+
+##### 主程式 #####
+temp = cute(1, 1)
+ans = cute(temp, temp)
+while_print(ans)
+
+# 0 拉姆好可愛
+# 1 拉姆好可愛
+# 2 拉姆好可愛
+# 3 拉姆好可愛
+```
+
+進賢：利用 for 出 2 題小題目，給他們練習
+
+> [!EXAMPLE] Lab
+> 題目
+> 應該要輸出甚麼
+
+
+
 ## 1. 亂數(random)
 
 在遊戲中，我們會常常使用到【亂數】J 個概念，像是

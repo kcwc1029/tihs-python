@@ -1,3 +1,71 @@
+## 1. thonny IDE
+
+【我們要用 python 寫程式】，那這句話當中，你可能會有兩個名詞不太懂，Python 是甚麼？程式是甚麼？
+
+這樣說好了，假設我們要煮飯：
+
+-   煮飯是一個動作(就是寫程式)
+-   然後我們會需要白米(就是 python)
+-   我們需要電鍋(這個就是 IDE)
+    -   煮飯可以有很多方式，可以用電鍋，可以自己炊 etc，IDE 也是依樣。
+
+這次這次我們選的電鍋(IDE)就是 thonny
+
+![upgit_20250331_1743413474.png|268x271](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250331_1743413474.png)
+
+### 1.1. 安裝 thonny
+
+安裝連結：[Thonny, Python IDE for beginners](https://thonny.org/)
+
+![upgit_20250331_1743411768.png|614x436](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250331_1743411768.png)
+
+就是一直預設安裝即可(簡單八)
+
+![upgit_20250331_1743411857.png|445x341](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250331_1743411857.png)![upgit_20250331_1743411918.png|430x341](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250331_1743411918.png)
+
+### 1.2. 使用 thonny
+
+![upgit_20250331_1743413294.png|158x158](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250331_1743413294.png)
+
+這樣就安裝好搂！讓我們來啟動她
+
+![upgit_20250331_1743412154.png|481x454](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250331_1743412154.png)
+
+在打開後，他會長這樣(可能顏色會不同，但基本版面都是這樣)
+
+![upgit_20250331_1743412241.png|604x392](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250331_1743412241.png)
+
+首先，我們要對電鍋做一些設定參數
+IDE 他本身是一個編輯器環境，我們要告訴他，要用【python】寫程式
+
+![upgit_20250331_1743412830.png|508x259](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250331_1743412830.png)
+
+![upgit_20250331_1743412877.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250331_1743412877.png)
+
+我們來簡單介紹一下這個 IDE 版面跟操作
+
+![upgit_20250331_1743413103.png|571x374](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250331_1743413103.png)
+
+1 號區塊就是檔案路徑，就跟你的檔案總館一樣
+
+![upgit_20250331_1743413160.png|531x395](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250331_1743413160.png)
+
+2 號區塊就是讓你寫程式的地方
+3 號區塊就是程式執行，顯示結果的地方
+
+那接下來幫我在【2 好區塊】寫下這一串
+
+```python
+print("hello 南工", 123)
+```
+
+![upgit_20250331_1743413656.png|790x174](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250331_1743413656.png)
+
+要讓程式運行，就按綠色按鈕(要記得儲存(ctrl+S)
+要讓程式停止，就按紅色按鈕
+
+![upgit_20250331_1743413733.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250331_1743413733.png)
+
 到這邊的話，代表你們已經安裝完了
 總之，當你們成功看到這串文字時，就代表你們已經成功了 XD
 
@@ -7,7 +75,7 @@
 > 這部動畫較【Re:從零開始的異世界生活】
 > 超級好看!!!
 
-## 1. 基本輸出 print
+## 2. 基本輸出 print
 
 學習每一個程式的第一步，就是要將你的程式碼給【印出來】
 (讓你有種， 歐齁~電腦在聽我的話耶~ 這種感覺)
@@ -26,13 +94,19 @@ print("助教好可愛")
 > [!info] 補充：
 > 整數(int)、浮點數(float)
 
-那如果我來做一些奇怪的事怎麼樣 ，像是ww
+那如果我來做一些奇怪的事怎麼樣 ，像是 ww
 
 ```py
 print(10/0)
 ```
 
-### 1.1. 嘗試輸出字串
+![upgit_20250331_1743413805.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250331_1743413805.png)
+
+> [!error] 他報錯了
+> 上一次看到紅色的東西，應該是校門口的紅綠燈對吧
+> 紅色通常就是告訴你，遇到了一些錯誤，請你去把這個錯誤處理掉！！
+
+### 2.1. 嘗試輸出字串
 
 我們來試試看輸出「文字」
 
@@ -46,7 +120,7 @@ print(10/0)
 # 可以用單引號或雙引號
 ```
 
-### 1.2. 輸出字串月曆
+### 2.2. 輸出字串月曆
 
 阿!!!!，助教想起來，助教這個月好像要跟雷姆一起去看電影，但忘記是哪一天了(ಠ 益 ಠ)
 小朋友，你可以幫我看一下這個月的時間嗎
@@ -94,7 +168,7 @@ import calendar
 print(calendar.prcal(2025))
 ```
 
-## 2. 變數
+## 3. 變數
 
 那其實，我們盡可能的會把我們要的東西，用一個【變數】去代表他
 假設我今天要輸出的內容超級長，我總不能讓費時間在打內容本身吧 XD
@@ -111,7 +185,7 @@ t = "從零開始的異世界生活"
 print(t)
 ```
 
-### 2.1. 變數命名方式
+### 3.1. 變數命名方式
 
 這很重要，名子取不好的話，助教就會氣到發光歐
 
@@ -130,11 +204,59 @@ TA_cute = "助教好可愛"
 if = 0 # 保留字不可以使用
 ```
 
-## 3. 資料類型(data type)
+## 4. 資料類型(data type)
 
-晉賢
+在 Python 裡，每一個變數，都有一個屬性：資料類型
+就像每個角色都有職業一樣（劍士、魔法師、補師），不同的資料型態，能做的事情也不一樣！
 
-## 4. 輸入資料(input)
+| 資料型態        | 範例              | 說明                 |
+| --------------- | ----------------- | -------------------- |
+| `int`（整數）   | `123`, `-7`, `0`  | 不帶小數點的數字     |
+| `float`（浮點） | `3.14`, `-0.5`    | 有小數點的數字       |
+| `str`（字串）   | `"雷姆"`、`'123'` | 用引號包住的文字     |
+| `bool`（布林）  | `True`, `False`   | 只有兩種值的邏輯判斷 |
+
+可以透過 type()得知某個變數的類型。
+
+```python
+a = 123
+b = 3.14
+c = "雷姆好可愛"
+d = True
+
+print(type(a))  # int
+print(type(b))  # float
+print(type(c))  # str
+print(type(d))  # bool
+```
+
+```python
+# 文字型的數字 ≠ 數值
+x = "123"    # 字串
+y = 123      # 整數
+
+print(x + x)  # 結果是 "123123"
+print(y + y)  # 結果是 246
+```
+
+```python
+# NoneType 表示	什麼都沒有、空空的（等於 null）
+# 常用在「還沒決定值」的狀況（像剛創角色還沒選職業）
+x = None
+print(type(x))  # <class 'NoneType'>
+```
+
+> [!EXAMPLE] 試著建立以下變數，並用 `type()` 印出資料型態
+>
+> ```python
+> num = 2025
+> pi = 3.14159
+> name = "艾姬多娜"
+> is_cute = True
+> nothing = None
+> ```
+
+## 5. 輸入資料(input)
 
 程序在執行時，會有【等待使用者】輸入的時機
 我們要如何時做呢
@@ -177,7 +299,7 @@ print(type(m))
 # <class 'str'>
 ```
 
-## 5. 條件句 if/else
+## 6. 條件句 if/else
 
 這是助教在【Re:從零開始的異世界生活】最喜歡的三個角色(阿還有愛姬多那)
 
@@ -216,383 +338,60 @@ else:
 
 <img src="https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250323_1742729719.png" height="500">
 
-進賢：出 2-3 題小題目，給他們練習
-做個小題目
-然後輸出要長怎樣
-
 > [!EXAMPLE] Lab：【猜燈謎遊戲】
 > 我們來寫個【猜燈謎遊戲】
 > 會有一個題目敘述，玩家可以輸入答案。程式會去比較玩家輸入與答案，並輸出「答對了」或「答錯了」。
-
-```python
-# Answer
-ans = "圍巾"
-question = "天天跟你黏一起，天冷時才想起。（猜一衣物）"
-
-print(question)
-n = input()
-if n == ans:
-    print("答對了")
-else:
-    print("答錯了")
-```
-
-> [!EXAMPLE] Lab
-> 題目
-> 應該要輸出甚麼
-
-## 6. 列表
-
-> [!NOTE] 補充
-> 在 python 當中，他叫列表(list)
-> 在其他程式中，他叫陣列(array)
-
-今天助教想要將大家的名字儲存起來，那你覺得助教應該怎麼做
-像這樣嗎？
-
-```python
-student00 = "菜月昴"
-student01 = "愛蜜莉雅"
-student02 = "帕克"
-student03 = "雷姆"
-student04 = "拉姆"
-student05 = "艾姬多娜"
-
-print(student05) # 艾姬多娜
-```
-
-這個時候，你是不是在心裡 OS
-
-> 如果我有 100 個，我不就要做一百次資料嗎...
-
-助教有聽到你的疑問了~。這時候，我們又要用這個東西：陣列
-
-<img src="https://i.pinimg.com/736x/21/e1/02/21e1029e0ded502d16674bb82806f051.jpg" height="300">
-
-<img src="https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250323_1742721868.png" height="150">
-
-> [!NOTE] 補充
 >
-> 其實呀，學程式這件事，他就是在電腦裡面，去做各式各樣的容器與指令
-> 這邊提到的容器，指的就是裝資料的方式
-> 如果未來你得的是資訊相關科系，就會碰到大名鼎鼎的課程【資料結構】
-
-```python
-student = ["菜月昴","愛蜜莉雅","帕克","雷姆","拉姆","艾姬多娜"]
-
-print(student[0]) # 菜月昴
-print(student[3]) # 雷姆
-
-print(student[-1]) # 艾姬多娜
-print(student[-2]) # 拉姆
-```
-
-進賢：利用 if else+list 出 2-3 題小題目，給他們練習
-
-> [!EXAMPLE]
+> ```python
+> # Answer
+> ans = "圍巾"
+> question = "天天跟你黏一起，天冷時才想起。（猜一衣物）"
 >
-> 應該要輸出甚麼
-
-> [!EXAMPLE] Lab
-> 題目
-> 應該要輸出甚麼
-
-## 7. 迴圈
-
-如果我今天想【跑一遍陣列】，就要使用到迴圈
-迴圈的意思，就是說【要做重複的事】
-迴圈有兩種，分別為：
-
--   for 迴圈：我知道我要【做幾次】
--   while 迴圈：只要【符合一個條件】，我就一直做
-
-### 7.1. for 迴圈
-
-<img src="https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250326_1742973023.png" height="400">
-
-```python
-for i in range(5):
-    print(f"{i} 雷姆好可愛")
-    # 如果你要他不換行的話
-    # print("雷姆好可愛", end=" ")
-
-# 0 雷姆好可愛
-# 1 雷姆好可愛
-# 2 雷姆好可愛
-# 3 雷姆好可愛
-# 4 雷姆好可愛
-```
-
-```python
-for i in range(1,10):
-    print(f"{i} 雷姆好可愛", end=" ")
-
-#  雷姆好可愛 2 雷姆好可愛 3 雷姆好可愛 4 雷姆好可愛 5 雷姆好可愛 6 雷姆好可愛 7 雷姆好可愛 8 雷姆好可愛 9 雷姆好可愛
-```
-
-```python
-for i in range(1,10, 2):
-    print(f"{i} 雷姆好可愛", end=" ")
-
-# 1 雷姆好可愛 3 雷姆好可愛 5 雷姆好可愛 7 雷姆好可愛 9 雷姆好可愛
-```
-
-進賢：利用 for 出 2 題小題目，給他們練習
-
-> [!EXAMPLE] Lab：【猜燈謎遊戲】
-> 如果我們今天要做的猜燈謎遊戲，我想要一次玩 5 關呢
-
-```python
-question = [
-    "天天跟你黏一起，天冷時才想起。（猜一衣物）",
-    "什麼東西越洗越髒",
-    "哪一條線永遠不會有結",
-    "你的右邊臉頰長得像什麼？",
-    "哪尊神明不喜歡吵鬧"
-]
-
-ans = ["圍巾","水","時間線", "像你的左邊臉頰", "觀世音"]
-
-for i in range(len(question)):
-    print(question[i])
-    n = input()
-    if n == ans[i]:
-        print("答對了")
-    else:
-        print("答錯了")
-```
-
-> [!EXAMPLE] Lab
-> 題目
-> 應該要輸出甚麼
-
-### 7.2. while 迴圈
-
-<img src="https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250326_1742973796.png" height="400">
-
-```python
-num = 1
-while num<5:
-    print(f"{num} 雷姆好可愛")
-    num += 1 # num = num + 1
-
-# 1 雷姆好可愛
-# 2 雷姆好可愛
-# 3 雷姆好可愛
-# 4 雷姆好可愛
-```
-
-while 迴圈有一個很危險的動作，請大家一定要注意
-while 迴圈的條件，一定要滿足，他才會結束；如果沒有讓它結束，他就會一直一直一直做同一件事 => 無限迴圈(這是很不好的！！！)
-
-```python
-# 這行讓助教先示範，不要自己操作
-num = 1
-while num<5:
-    print(f"{num} 雷姆好可愛")
-```
-
-晉賢
-
-> [!EXAMPLE] Lab
-> 題目
-> 應該要輸出甚麼
-
-> [!EXAMPLE] Lab
-> 題目
-> 應該要輸出甚麼
-
-### 7.3. break
-
-<img src="https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250326_1742974148.png" height="400">
-
-```python
-num = 0
-while num<5:
-    if num ==3:
-        break
-    print(f"{num} 雷姆好可愛")
-    num += 1 # num = num + 1
-
-# 0 雷姆好可愛
-# 1 雷姆好可愛
-# 2 雷姆好可愛
-```
-
-進賢：利用 for 出 2 題小題目，給他們練習
-
-> [!EXAMPLE] Lab
-> 題目
-> 應該要輸出甚麼
-
-> [!EXAMPLE] Lab
-> 題目
-> 應該要輸出甚麼
-
-### 7.4. continue
-
-```python
-num = 0
-while num < 5:
-    if num == 3:
-        num += 1  # 先加，再跳過
-        continue
-    print(f"{num} 雷姆好可愛")
-    num += 1
-
-# 0 雷姆好可愛
-# 1 雷姆好可愛
-# 2 雷姆好可愛
-# 4 雷姆好可愛
-```
-
-<img src="https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250326_1742974688.png" height="400">
-
-進賢：利用 for 出 2 題小題目，給他們練習
-
-> [!EXAMPLE] Lab
-> 題目
-> 應該要輸出甚麼
-
-> [!EXAMPLE] Lab
-> 題目
-> 應該要輸出甚麼
-
-## 8. 函數
-
-函數就是把一段常常會用的動作，打包成一個你自己取的名字，以後想用就「叫名字」就好！
-
-> 就像是煮雞湯，如果你都是從菜市場買雞肉回來熬，就是會比較麻煩。
-> 如果先一次煮多一些，然後把他拿去冷凍做成雞湯塊，有需要使用，再從冷凍庫拿出來，這樣 484 會比較輕鬆
-
-### 8.1. 函數的語法
-
--   分為「定義函數」跟「呼叫函數」
-
-```python
-##### 定義函數 #####
-def cute():
-	# 這個函數要做的事
-	print("雷姆好可愛")
-
-##### 呼叫函數 #####
-cute() # 雷姆好可愛
-cute() # 雷姆好可愛
-cute() # 雷姆好可愛
-cute() # 雷姆好可愛
-cute() # 雷姆好可愛
-```
-
--   再用【煮雞湯】舉個例
-
-```python
-##### 定義函數 #####
-def chicken_soup():
-	# 這個函數要做的事
-	print("備料")
-	print("汆燙雞肉")
-	print("加水煮湯")
-	print("轉小火慢燉")
-	print("調味與撈油")
-
-
-##### 主程式 #####
-chicken_soup() # 雷姆好可愛
-```
-
-進賢：利用 for 出 2 題小題目，給他們練習
-
-> [!EXAMPLE] Lab
-> 題目
-> 應該要輸出甚麼
-
-### 8.2. 參數
-
-在認識完基本函數後，我們來做個不一樣的變化
-假設我今天要做一個函數，這個函數的任務是【接收兩個數字，然後把兩數相加，這個數字就是決定，輸出“拉姆好可愛”的次數】
-
-```python
-def cute(a, b):
-    c = a + b
-    for i in range(c):
-        print("拉姆好可愛")
-    print()
-
-##### 主程式 #####
-cute(1, 0)
-
-cute(a=1, b=2)
-```
-
-那其實你可以發現，cute()他裡面就是做兩件事
-
--   做加法
--   輸出
-    那狠一點，可以把兩件事都去做成函數
-
-```python
-##### 函數：輸出 #####
-def while_print(num):
-    i = 0
-    while i<num:
-        print(f"{i} 拉姆好可愛")
-        i+=1
-    print()
-
-##### 相加 #####
-def cute(a, b):
-    c = a + b
-    while_print(c)
-
-
-##### 主程式 #####
-cute(1, 0)
-
-cute(a=1, b=2)
-```
-
-進賢：利用 for 出 2 題小題目，給他們練習
-
-> [!EXAMPLE] Lab
-> 題目
-> 應該要輸出甚麼
-
-### 8.3. 回傳
-
-目前的函數，大概是長這樣
-<img src="https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250326_1742981486.png" height="300">
-
-那~我希望他是，呼叫函數之後，函數執行完的結果，可以傳回主程式（或是在傳給其他函數）
-
-<img src="https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250326_1742981721.png" height="300">
-
-```python
-##### 函數：輸出 #####
-def while_print(num):
-    i = 0
-    while i<num:
-        print(f"{i} 拉姆好可愛")
-        i+=1
-    print()
-
-##### 相加 #####
-def cute(a, b):
-    c = a + b
-    return c
-
-##### 主程式 #####
-temp = cute(1, 1)
-ans = cute(temp, temp)
-while_print(ans)
-
-# 0 拉姆好可愛
-# 1 拉姆好可愛
-# 2 拉姆好可愛
-# 3 拉姆好可愛
-```
-
-進賢：利用 for 出 2 題小題目，給他們練習
-
-> [!EXAMPLE] Lab
-> 題目
-> 應該要輸出甚麼
+> print(question)
+> n = input()
+> if n == ans:
+>     print("答對了")
+> else:
+>     print("答錯了")
+> ```
+
+> [!EXAMPLE] 角色等級判定器
+> 在玩 RPG 遊戲時，如果角色等級超過某個數值，就能進階變職。
+> 請你用 if else 幫助教寫一個判斷階級的程式
+>
+> -   輸入 level(data type 為整數)
+> -   如果 level 大於 50，輸出"你是高階冒險者，可以轉職成龍騎士！"
+> -   如果 level 小於 50，但大於 30，輸出"你是中階冒險者，可以轉職成劍士！"
+> -   如果 level 小於 30，，輸出"你還是初心者，要繼續努力練等喔！"
+>
+> ```python
+> # 玩家等級
+> level = int(input("請輸入你的角色等級："))
+>
+> if level >= 50:
+>     print("你是高階冒險者，可以轉職成龍騎士！")
+> elif level >= 30:
+>     print("你是中階冒險者，可以轉職成劍士！")
+> else:
+>     print("你還是初心者，要繼續努力練等喔！")
+> ```
+
+> [!EXAMPLE] 角色血量警告系統
+>
+> 幫角色監控血量
+>
+> -   輸入 hp(data type 為整數)
+> -   如果 hp 大於 70，輸出"血量充足，可以上前衝鋒！"
+> -   如果 hp 小於 70，但大於 30，輸出"血量中等，請小心行動"！"
+> -   如果 hp 小於 30，，輸出"危險！快喝紅水補血！"
+>
+> ```python
+> hp = int(input("請輸入角色目前血量（0-100）："))
+>
+> if hp >= 70:
+>     print("血量充足，可以上前衝鋒！")
+> elif hp >= 30:
+>     print("血量中等，請小心行動")
+> else:
+>     print("危險！快喝紅水補血！")
+> ```

@@ -1,3 +1,4 @@
+# 程式碼只是給你看看，不用修改任何程式碼！！
 import tkinter
 import tkinter.messagebox # FIXED: 修改程式碼
 
@@ -71,5 +72,3 @@ canvas.create_image(mx*80+40, my*80+40, image=img, tag="MYCHR")
 main_proc()
 
 root.mainloop()
-
-
