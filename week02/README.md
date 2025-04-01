@@ -1,9 +1,9 @@
-
-## 7. 列表
+## 1. 列表
 
 > [!NOTE] 補充
 > 在 python 當中，他叫列表(list)
 > 在其他程式中，他叫陣列(array)
+
 
 今天助教想要將大家的名字儲存起來，那你覺得助教應該怎麼做
 像這樣嗎？
@@ -23,7 +23,8 @@ print(student05) # 艾姬多娜
 
 > 如果我有 100 個，我不就要做一百次資料嗎...
 
-助教有聽到你的疑問了~。這時候，我們又要用這個東西：陣列
+助教有聽到你的疑問了~
+這時候，我們又要用這個東西：陣列
 
 <img src="https://i.pinimg.com/736x/21/e1/02/21e1029e0ded502d16674bb82806f051.jpg" height="300">
 
@@ -35,9 +36,12 @@ print(student05) # 艾姬多娜
 > 這邊提到的容器，指的就是裝資料的方式
 > 如果未來你得的是資訊相關科系，就會碰到大名鼎鼎的課程【資料結構】
 
+列表就像是一個超級無敵大書包，裡面可以裝很多很多東西，讓你方便存放資料。當然，這個「大書包」也不只裝書，還可以裝各種各樣的東西，比如「高達模型」、「漫畫」、「泡麵」等…只要你想裝，這裡都可以有！
+
 ```python
 student = ["菜月昴","愛蜜莉雅","帕克","雷姆","拉姆","艾姬多娜"]
 
+# 列表切片
 print(student[0]) # 菜月昴
 print(student[3]) # 雷姆
 
@@ -45,17 +49,67 @@ print(student[-1]) # 艾姬多娜
 print(student[-2]) # 拉姆
 ```
 
+### 1.1. 列表新增雷姆（元素）
+
+我們要來將雷姆放進list，為什麼要放雷姆？啊，我喜歡ww
+
+![upgit_20250401_1743475285.png|320x322](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/04/upgit_20250401_1743475285.png)
+
+
+注意：他是在加在【列表的尾端】
+
+```python
+student = ["菜月昴","愛蜜莉雅","帕克","雷姆","拉姆","艾姬多娜"]
+student.append("蕾姆")  # 新增一個學生名字
+print(student)  # ["菜月昴", "愛蜜莉雅", "帕克", "雷姆", "拉姆", "艾姬多娜", "蕾姆"]
+```
+
+
+### 1.2. 刪除雷姆（元素）
+
+當你發現雷姆沒有排隊領便當，可能就要把她從名單中刪除。不過不用擔心，她總會再回來的。
+
+```python
+student = ["菜月昴","愛蜜莉雅","帕克","雷姆","拉姆","艾姬多娜"]
+student.remove("雷姆")  # 刪除「雷姆」
+print(student)  # ["菜月昴", "愛蜜莉雅", "帕克", "拉姆", "艾姬多娜"]
+```
+
+
 進賢：利用 if else+list 出 2-3 題小題目，給他們練習
 
-> [!EXAMPLE]
->
-> 應該要輸出甚麼
 
-> [!EXAMPLE] Lab
-> 題目
-> 應該要輸出甚麼
+> [!EXAMPLE] 元素新增
+> 如果你是班長，想知道班上是否有「雷姆」這個名字
+> 有時候，學生自己來也沒事，問題是有些人總是遲到，像雷姆一樣，永遠等到最後一刻才出現。
+> ```python
+> students = ["菜月昴", "愛蜜莉雅", "帕克", "雷姆", "拉姆", "艾姬多娜"]
+> name = input("請問班上有雷姆嗎? 輸入她的名字：")
+> 
+> if name in students:
+>     print("雷姆就在這！班上找得到！")
+> else:
+>     print("雷姆這學期沒來，可能她又去迷路了～")
+> ```
 
-## 8. 迴圈
+> [!EXAMPLE]  元素切片
+> 假如你是學校餐廳的員工，想知道最後一個排隊的學生是誰
+> 應該要輸出甚麼
+> 
+> ```python
+> students = ["菜月昴", "愛蜜莉雅", "帕克", "雷姆", "拉姆", "艾姬多娜"]
+> print(f"最後一個排隊的學生是：{students[-1]}，希望他不是吃泡麵的，餐廳不提供～")
+> ```
+
+> [!EXAMPLE]  元素切片
+> 顯示中間的學生，讓大家知道誰在最焦點
+> ```python
+> middle_student = students[len(students) // 2]  # 正中央的人
+> print(f"今天最焦點的學生是：{middle_student}")
+> ```
+> 這個人常常站在最中間，大家圍著他轉，仿佛他是班上最亮的星。
+
+## 2. 迴圈
 
 如果我今天想【跑一遍陣列】，就要使用到迴圈
 迴圈的意思，就是說【要做重複的事】
@@ -64,7 +118,7 @@ print(student[-2]) # 拉姆
 -   for 迴圈：我知道我要【做幾次】
 -   while 迴圈：只要【符合一個條件】，我就一直做
 
-### 8.1. for 迴圈
+### 2.1. for 迴圈
 
 <img src="https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250326_1742973023.png" height="400">
 
@@ -99,32 +153,72 @@ for i in range(1,10, 2):
 
 > [!EXAMPLE] Lab：【猜燈謎遊戲】
 > 如果我們今天要做的猜燈謎遊戲，我想要一次玩 5 關呢
+> ```python
+> question = [
+>     "天天跟你黏一起，天冷時才想起。（猜一衣物）",
+>     "什麼東西越洗越髒",
+>     "哪一條線永遠不會有結",
+>     "你的右邊臉頰長得像什麼？",
+>     "哪尊神明不喜歡吵鬧"
+> ]
+> 
+> ans = ["圍巾","水","時間線", "像你的左邊臉頰", "觀世音"]
+> 
+> for i in range(len(question)):
+>     print(question[i])
+>     n = input()
+>     if n == ans[i]:
+>         print("答對了")
+>     else:
+>         print("答錯了")
+> ```
 
-```python
-question = [
-    "天天跟你黏一起，天冷時才想起。（猜一衣物）",
-    "什麼東西越洗越髒",
-    "哪一條線永遠不會有結",
-    "你的右邊臉頰長得像什麼？",
-    "哪尊神明不喜歡吵鬧"
-]
+> [!EXAMPLE] 我的異世界冒險隊
+> 你被召喚到異世界，你需要組建一支冒險隊！這支隊伍會有很多成員，並且需要逐一檢查他們的特質，確保每個隊員都能發揮作用。
+> ```python
+> adventurer_names = ["菜月昴", "艾蜜莉雅", "雷姆", "拉姆", "白狐"]
+> adventurer_traits = ["一個喜歡背負命運的少年", "一位高冷的魔法師", "你永遠無法忍受她的可愛", "喜歡騎馬的雙胞胎", "她帶著一顆大大的耳朵"]
+> 
+> for i in range(len(adventurer_names)):
+>     print(f"{adventurer_names[i]}：{adventurer_traits[i]}")
+>     n = input(f"你想選擇 {adventurer_names[i]} 嗎？(是/否): ")
+>     if n == "是":
+>         print(f"{adventurer_names[i]} 成為你的隊員！")
+>     else:
+>         print(f"{adventurer_names[i]} 被拒絕加入！")
+> ```
 
-ans = ["圍巾","水","時間線", "像你的左邊臉頰", "觀世音"]
+> [!EXAMPLE] 當我獨自升級
+> 有一個人決定開始進行每周的鍛鍊計畫，每次他要記錄下自己做了多少運動。每次跑完步後，他都會告訴自己：「我還能再做一次！」，你能幫他完成這個計劃嗎？
+> ```python
+> days = ["星期一", "星期二", "星期三", "星期四", "星期五"]
+> exercise = ["跑步", "俯臥撐", "深蹲", "健身房", "游泳"]
+> 
+> for i in range(len(days)):
+>     print(f"{days[i]}: 今天要做什麼運動呢？")
+>     print(f"做 {exercise[i]}！")
+>     n = input(f"你今天做了{exercise[i]}嗎？(是/否): ")
+>     if n == "是":
+>         print(f"太棒了！{days[i]}的運動完成！")
+>     else:
+>         print(f"加油！下次記得運動哦！")
+> ```
 
-for i in range(len(question)):
-    print(question[i])
-    n = input()
-    if n == ans[i]:
-        print("答對了")
-    else:
-        print("答錯了")
-```
 
-> [!EXAMPLE] Lab
-> 題目
-> 應該要輸出甚麼
+> [!EXAMPLE] 寵物訓練遊戲
+> 你正在訓練你的寵物，它的名字是「小雷」，今天你要教牠「坐下」、「握手」和「滾動」三個動作，你想要檢查牠學會了多少動作。
+> ```python
+> commands = ["坐下", "握手", "滾動"]
+> for i in range(len(commands)):
+>     print(f"教{commands[i]}給小雷！")
+>     n = input(f"小雷學會了 {commands[i]} 嗎？(是/否): ")
+>     if n == "是":
+>         print(f"好樣的！小雷現在會 {commands[i]}！")
+>     else:
+>         print(f"沒關係！再試一次！")
+> ```
 
-### 8.2. while 迴圈
+### 2.2. while 迴圈
 
 <img src="https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250326_1742973796.png" height="400">
 
@@ -152,15 +246,17 @@ while num<5:
 
 晉賢
 
-> [!EXAMPLE] Lab
-> 題目
-> 應該要輸出甚麼
+> [!EXAMPLE] 無限喝奶茶大作戰
+> 你是一個奶茶控，每天都要喝上一杯奶茶。不過，現在有一個問題——你到底喝了多少杯呢？讓我們來看看這個「無限」喝奶茶的故事。
+> ```python
+> cups = 0
+> while cups < 5:
+>     print(f"喝了 {cups + 1} 杯奶茶！")
+>     cups += 1
+> ```
 
-> [!EXAMPLE] Lab
-> 題目
-> 應該要輸出甚麼
 
-### 8.3. break
+### 2.3. break
 
 <img src="https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250326_1742974148.png" height="400">
 
@@ -179,15 +275,31 @@ while num<5:
 
 進賢：利用 for 出 2 題小題目，給他們練習
 
-> [!EXAMPLE] Lab
-> 題目
-> 應該要輸出甚麼
+> [!EXAMPLE] 寶可夢捕捉計劃
+> 你正在進行一個寶可夢捕捉計劃。你的目標是捕捉一定數量的寶可夢。但是當你捕捉到最想要的那隻寶可夢後，你就決定停止。
+> ```python
+> pokemon = 0
+> while pokemon < 10:
+>     if pokemon == 5:  # 當捕捉到第 5 隻寶可夢時就停止
+>         print("捕捉到最想要的寶可夢，停下來休息！")
+>         break
+>     print(f"捕捉到第 {pokemon + 1} 隻寶可夢")
+>     pokemon += 1
+> ```
 
-> [!EXAMPLE] Lab
-> 題目
-> 應該要輸出甚麼
-
-### 8.4. continue
+> [!EXAMPLE] 誰是洗碗王？
+> 你和朋友們決定進行一個挑戰，看誰能最快完成洗碗。每個人必須完成三輪洗碗，你是最後一位，當你完成後，才會結束比賽。
+> ```python
+> washing = 0
+> while washing < 3:
+>     print(f"現在是第 {washing + 1} 輪洗碗！")
+>     washing += 1
+> 
+>     if washing == 3:
+>         print("好啦！我洗完了，終於可以放過我了！")
+>         break
+> ```
+### 2.4. continue
 
 ```python
 num = 0
@@ -208,22 +320,47 @@ while num < 5:
 
 進賢：利用 for 出 2 題小題目，給他們練習
 
-> [!EXAMPLE] Lab
-> 題目
-> 應該要輸出甚麼
+> [!EXAMPLE] 早起大挑戰
+> 你今天決定早起去跑步，目標是運動 5 天。每當你看到天氣不好（例如下雨），你就會跳過那一天，繼續跑步。當然，你一定要堅持完成挑戰！
+> ```python
+> days = 0
+> while days < 5:
+>     weather = input("今天天氣如何（晴天/下雨）？")
+>     if weather == "下雨":
+>         print("今天下雨，跳過跑步！")
+>         days += 1  # 即便天氣不好，還是算完成一天
+>         continue
+>     print(f"今天運動完成！已經跑了 {days + 1} 天")
+>     days += 1
+> ```
 
-> [!EXAMPLE] Lab
-> 題目
-> 應該要輸出甚麼
 
-## 9. 函數
+> [!EXAMPLE] 一天三餐挑戰
+> 你決定要記錄每天吃的三餐。如果有哪餐沒吃，則跳過。當你吃完第一餐並記錄後，開始進行第二餐。
+> ```python
+> meals = ["早餐", "午餐", "晚餐"]
+> meal_count = 0
+> 
+> while meal_count < len(meals):
+>     meal = input(f"今天有吃 {meals[meal_count]} 嗎？(是/否) ")
+>     if meal == "否":
+>         print(f"沒吃 {meals[meal_count]}，跳過！")
+>         meal_count += 1
+>         continue  # 跳過當天的餐點，進入下一餐
+>     print(f"記錄下 {meals[meal_count]} 完成！")
+>     meal_count += 1
+> ```
+
+
+
+## 3. 函數
 
 函數就是把一段常常會用的動作，打包成一個你自己取的名字，以後想用就「叫名字」就好！
 
 > 就像是煮雞湯，如果你都是從菜市場買雞肉回來熬，就是會比較麻煩。
 > 如果先一次煮多一些，然後把他拿去冷凍做成雞湯塊，有需要使用，再從冷凍庫拿出來，這樣 484 會比較輕鬆
 
-### 9.1. 函數的語法
+### 3.1. 函數的語法
 
 -   分為「定義函數」跟「呼叫函數」
 
@@ -260,11 +397,25 @@ chicken_soup() # 雷姆好可愛
 
 進賢：利用 for 出 2 題小題目，給他們練習
 
+> [!EXAMPLE] 追劇計劃生成器
+> 假設你有一個追劇計劃，每週要看 5 集，你希望能每週安排不同的劇集。這時候，你可以利用函數來幫助自己計劃每週的觀看進度。
+> ```python
+> # 這個函數會生成每週看劇的計劃
+> def weekly_show_plan(week_number):
+>     for i in range(1, 6):  # 每週 5 集
+>         print(f"第{week_number}週，觀看劇集 {i} 集")
+> 
+> # 主程式
+> weekly_show_plan(1)
+> weekly_show_plan(2)
+> weekly_show_plan(3)
+> ```
+
+
 > [!EXAMPLE] Lab
 > 題目
 > 應該要輸出甚麼
-
-### 9.2. 參數
+### 3.2. 參數
 
 在認識完基本函數後，我們來做個不一樣的變化
 假設我今天要做一個函數，這個函數的任務是【接收兩個數字，然後把兩數相加，這個數字就是決定，輸出“拉姆好可愛”的次數】
@@ -311,11 +462,55 @@ cute(a=1, b=2)
 
 進賢：利用 for 出 2 題小題目，給他們練習
 
-> [!EXAMPLE] Lab
-> 題目
-> 應該要輸出甚麼
+> [!EXAMPLE] 早餐時間表
+> 今天早上你要吃三種不同的食物，但你還不確定每一個食物的吃法。你可以用函數來設定每個食物的吃法，然後生成今天的早餐計劃。
+> ```python
+> # 這個函數會根據輸入的食物，決定怎麼吃
+> def breakfast(food1, food2, food3):
+>     print(f"今天的早餐計劃：")
+>     print(f"1. {food1}：先放微波爐加熱")
+>     print(f"2. {food2}：加點果醬再吃")
+>     print(f"3. {food3}：配上一杯牛奶")
+> 
+> # 主程式
+> breakfast("吐司", "煎蛋", "沙拉")
+> ```
 
-### 9.3. 回傳
+> [!EXAMPLE] 一周健身計劃
+> 假設你要做一個每週健身計劃，計劃每週做 3 天的運動，每天做不同的運動。你想將每週運動的天數和運動項目作為參數傳入函數。
+> ```python
+> # 這個函數接收每週運動天數並列出每天的運動項目
+> def weekly_exercise(days):
+>     exercises = ["跑步", "深蹲", "伏地挺身", "游泳", "瑜伽"]
+>     for day in range(1, days + 1):
+>         exercise = exercises[day % len(exercises)]
+>         print(f"第{day}天：做{exercise}！")
+> 
+> # 主程式
+> weekly_exercise(5)
+> ```
+
+> [!EXAMPLE]  網購清單生成器
+> 假設你在網購，並且要生成購物清單。我們會使用函數來計算所有商品的總價，並返回購物清單。
+> ```python
+> # 這個函數接收每個商品的名稱和價格，並返回總價
+> def calculate_total_price(price1, price2, price3):
+>     total = price1 + price2 + price3
+>     return total
+> 
+> # 輸入商品價格
+> def shopping_cart(item1, item2, item3):
+>     total = calculate_total_price(item1, item2, item3)
+>     print(f"購物清單：")
+>     print(f"商品1：{item1}元")
+>     print(f"商品2：{item2}元")
+>     print(f"商品3：{item3}元")
+>     print(f"總價：{total}元")
+> 
+> # 主程式
+> shopping_cart(300, 150, 200)
+> ```
+### 3.3. 回傳
 
 目前的函數，大概是長這樣
 <img src="https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250326_1742981486.png" height="300">
@@ -351,13 +546,17 @@ while_print(ans)
 
 進賢：利用 for 出 2 題小題目，給他們練習
 
+
 > [!EXAMPLE] Lab
 > 題目
 > 應該要輸出甚麼
 
 
+> [!EXAMPLE] Lab
+> 題目
+> 應該要輸出甚麼
 
-## 1. 亂數(random)
+## 4. 亂數(random)
 
 在遊戲中，我們會常常使用到【亂數】J 個概念，像是
 
@@ -369,7 +568,7 @@ while_print(ans)
 
 <img src="https://i.pinimg.com/736x/79/56/a2/7956a235970913d5edcd44492b56b0a9.jpg" width="300px">
 
-### 1.1. 產出【介於 0-1】的亂數
+### 4.1. 產出【介於 0-1】的亂數
 
 ```python
 import random
@@ -378,7 +577,7 @@ r = random.random()
 print(r)
 ```
 
-### 1.2. 產出【整數】的亂數
+### 4.2. 產出【整數】的亂數
 
 ```python
 import random
@@ -387,7 +586,7 @@ r = random.randint(1,6) # 產出借於1-6之間得整數
 print(r)
 ```
 
-### 1.3. 產出【整數】的亂數
+### 4.3. 產出【整數】的亂數
 
 語法：random.randint(min, max)
 
@@ -398,7 +597,7 @@ r = random.randint(1,6) # 產出借於1-6之間得整數
 print(r)
 ```
 
-### 1.4. 從多個項目中中挑選出一個
+### 4.4. 從多個項目中中挑選出一個
 
 如果今天要生成的東西，是有一個範圍的（像是從角色群中挑選一個角色出來）
 
@@ -416,282 +615,3 @@ r = random.randint(1,6) # 產出借於1-6之間得整數
 print(r)
 ```
 
-## 2. CUI 與 GUI
-
-孩子們，這邊想問一下，在你們心中，電腦是甚麼樣子？
-
-是這樣嗎？
-
-<span>
-<img src="https://i.pinimg.com/736x/13/e4/f9/13e4f9058fbd616f5921cd7322175d68.jpg" height="300px">
-<img src="https://i.pinimg.com/236x/53/59/8a/53598abc80aa3267e7e8a0f77b4c6ce9.jpg" height="300px">
-</span>
-
-<span>
-<img src="https://i.pinimg.com/736x/dd/be/11/ddbe11d4db63dcc1f638b5ceb23e9bfd.jpg" height="300px">
-<img src="https://pic.3h3.com/up/2021-2/202102241033447482.jpg" height="300px">
-</span>
-
-其實電腦的本身是屬於 CUI(character user interface，字元使用者介面)（像是 python 的 shell），就是透過文字與指令來操控電腦。
-但這樣是不是看起來很可怕，也很不近人情，因此工程師就在寫一個圖形介面程序，將 CUI 轉成 GUI(Graphical User Interface)。這有兩個影響點
-
--   使用上更加親民
--   效率會比較差(因為中間多了一到手續)
-
-![upgit_20250326_1742985952.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/03/upgit_20250326_1742985952.png)
-
-也因此，我們所看到的遊戲，他就是在 GUI 下面的產物。
-
-<span>
-<img src="https://i.pinimg.com/736x/d4/5e/f4/d45ef4f4e7eb8201124d3343fffc5aaa.jpg" height="300px">
-<img src="https://i.pinimg.com/736x/b4/ba/ca/b4baca019140e1c8ce6cf5cdb7b7890e.jpg" height="300px">
-</span>
-
-阿，但但但，這樣的一個遊戲，其實已經不單單是只有程式了，還有遊戲美術，企劃等等。
-若我們只想聚焦於程式這一塊的話，也是可以，但就是，做出來不會到那麼好看。
-所以，我們會聚焦在遊戲的一個邏輯，並用 CUI 的方式去完成。
-
-## 3. Lab：抽卡包
-
-<img src="https://down-tw.img.susercontent.com/file/tw-11134207-7rasm-m1smlgx827t7b4@resize_w450_nl.webp" height="300px">
-
-假設 SSR 抽取機率為 1%，意旨「抽 100 次只會有 1 次的機會會中」。或許有些人的理解是「那我只要抽 100 次，就一定會中」。那~是這樣嗎？
-所謂的 1%，還是會有人抽一次就中(歐皇)，還是會有人抽 200-300 次還是不中。
-接著，就讓我們來實作看看這種機制：
-
-> 我們稍微改一下
-> 將機率訂為 10%，就是「抽 10 次只會有 1 次的機會會中」之機率。
-
-```python
-import random
-
-count = 0 # 紀錄抽取次數
-while True:
-    # 次數+1
-    count +=1
-
-    # 由亂數生成
-    r = random.randint(1, 10)
-    print(r)
-    if r == 7:
-        break
-    print(f"於第{r}次抽中SSR")
-```
-
-> [!INFO] RPG 中設計「逃跑失敗率」的邏輯
-> 在許多 RPG 遊戲中，玩家從戰鬥中選擇「逃跑」時，不一定能成功，會依照「失敗機率」決定是否逃脫成功。
-> 這背後其實是一個簡單但極具彈性的機率系統設計問題。
->
-> #####為什麼需要設計逃跑失敗機率#####
->
-> -   增加遊戲的 緊張感與挑戰性
-> -   防止玩家「輕易逃脫 → 無敵解法」
-> -   符合戰鬥策略設計（有風險就會更刺激）
->
-> 假設遊戲設定為【如果玩家選擇撤退，失敗機率要 33%(1/3)】
-> 我們可以先隨機產生一個數字(介於 1-100)
-> 如果數值在 30 以內(<30) => 撤退失敗
-> 反之(30-70) => 撤退成功
->
-> 【資料補充】[【專欄】論述「JRPG」在戰鬥系統上的「變」與「不變」 - 巴哈姆特](https://gnn.gamer.com.tw/detail.php?sn=161035)
-
-## 4. Lab：大富翁
-
-### 4.1. 顯示大富翁畫面
-
-大富翁是邊丟骰子一邊往前的遊戲，如果我們要用 CUI 的方式去表現的話。
-
-```
-起點*****A************************終點
-起點**B***************************終點
-```
-
-要如何透過程式去實做出來呢？
-
-```python
-a_pos = 6 # A的位置
-b_pos = 3 # B的位置
-all_pos = 30 # 地圖路徑
-
-def f(a, b, all):
-    print("起點" + "*" * (a-1) + "A" + "*" * (all-a) + "終點")
-    print("起點" + "*" * (b-1) + "B" + "*" * (all-b) + "終點")
-
-##### 主程式 #####
-f(a_pos, b_pos, all_pos)
-```
-
-### 4.2. 利用迴圈推進
-
-我想要做到：
-
--   按下【enter】後，他會往前進
-
-```python
-a_pos = 1 # A的位置
-b_pos = 1 # B的位置
-all_pos = 30 # 地圖路徑
-
-def f(a, b, all):
-    print("起點" + "*" * (a-1) + "A" + "*" * (all-a) + "終點")
-    print("起點" + "*" * (b-1) + "B" + "*" * (all-b) + "終點")
-
-##### 主程式 #####
-while True
-	f(a, b, all)
-	input("按下enter就會前進")
-	a+=1
-	b+=1
-```
-
-### 4.3. 判斷抵達終點
-
-```python
-a_pos = 1 # A的位置
-b_pos = 1 # B的位置
-all_pos = 30 # 地圖路徑
-
-def f(a, b, all):
-    print("起點" + "*" * (a-1) + "A" + "*" * (all-a) + "終點")
-    print("起點" + "*" * (b-1) + "B" + "*" * (all-b) + "終點")
-
-##### 主程式 #####
-while True:
-    f(a_pos, b_pos, all_pos)
-    input("按下enter就會前進")
-    a_pos+=1
-    b_pos+=1
-    # 判斷終點
-    if a_pos >= all_pos:
-        a_pos = all_pos
-    if b_pos >= all_pos:
-        b_pos = all_pos
-```
-
-### 4.4. 優化為你跟電腦玩
-
-```python
-import random
-
-a_pos = 1 # A的位置
-b_pos = 1 # B的位置
-all_pos = 30 # 地圖路徑
-
-def f(a, b, all):
-    print("起點" + "*" * (a-1) + "玩家" + "*" * (all-a) + "終點")
-    print("起點" + "*" * (b-1) + "電腦" + "*" * (all-b) + "終點")
-
-
-##### 主程式 #####
-while True:
-    f(a_pos, b_pos, all_pos)
-    input("按下enter就會前進")
-    a_pos+= random.randint(1, 10)
-    b_pos+= random.randint(1, 10)
-    # 判斷終點
-    if a_pos >= all_pos:
-        a_pos = all_pos
-        print("玩家獲勝")
-        break
-    if b_pos >= all_pos:
-        b_pos = all_pos
-        print("電腦獲勝")
-        break
-```
-
-## 5. Lab：尋找消失的英文字母
-
-這是一個【時間競速的遊戲】比較看誰能找到【正確】的字母
-
-### 5.1. 如何計時
-
-首先，我們要先學會，如何計時
-
-```python
-import datetime
-
-# 開始時間做一個標記
-start = datetime.datetime.now()
-for i in range(50):
-    print("助教好可愛")
-
-# 結束時間做一個標記
-end = datetime.datetime.now()
-
-print(f"開始時間{start}")
-print(f"結束時間{end}")
-print(f"時間差距{end-start}")
-```
-
-### 5.2. 做字母陣列
-
-將 C 作為要消失的字母
-
-```python
-ABC = ["A", "B", "C", "D", "E", "F", "G"]
-disappear = "C" # 我要消失的字母
-new_ABC = []
-
-#  做出題目
-for i in ABC:
-    if i != disappear:
-        new_ABC.append(i)
-print(new_ABC)
-```
-
-### 5.3. 延伸：做字母陣列
-
-接下來，我要要用隨機的方式，決定要消失的字母
-
-```python
-import random
-
-# 增強他的隨機效果
-# import time
-# random.seed(time.time())
-
-ABC = ["A", "B", "C", "D", "E", "F", "G"]
-disappear = random.choice(ABC) # 我要消失的字母
-new_ABC = []
-
-#  做出題目
-for i in ABC:
-    if i != disappear:
-        new_ABC.append(i)
-print(new_ABC)
-```
-
-### 5.4. 將所有東西做結合
-
-```python
-import datetime
-import random
-
-# 開始時間做一個標記
-start = datetime.datetime.now()
-
-# 增強他的隨機效果
-# import time
-# random.seed(time.time())
-
-ABC = ["A", "B", "C", "D", "E", "F", "G"]
-disappear = random.choice(ABC) # 我要消失的字母
-new_ABC = []
-
-#  做出題目
-for i in ABC:
-    if i != disappear:
-        new_ABC.append(i)
-print(new_ABC)
-
-# 讓玩家輸入
-ans = input("缺少哪一個字母呢？")
-if ans == disappear:
-    print("答對了")
-else:
-    print("答錯了")
-
-# 結束時間做一個標記
-end = datetime.datetime.now()
-print(f"遊戲時間{end-start}")
-```

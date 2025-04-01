@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "a0f27391d69b5cbd",
+        "id": "f059787bcabe9c64",
         "type": "tabs",
         "children": [
           {
-            "id": "a0f9196662b2ef23",
+            "id": "a90fe6f494649a92",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#為什麼需要設計逃跑失敗機率",
+                "query": "tag:#define",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -159,41 +159,40 @@
       "command-palette:開啟命令面板": false
     }
   },
-  "active": "a0f9196662b2ef23",
+  "active": "a90fe6f494649a92",
   "lastOpenFiles": [
     "week01/README.md",
-    "week01/week01_README.pdf",
     "week02/README.md",
-    "week04/README.md",
-    "week05/README.md",
-    "week01/安裝thonny.md",
-    "README.md",
-    "week05/mimi_on_maze03.py",
-    "week05/mimi_on_maze02 copy.py",
-    "week05/mimi_on_maze02.py",
-    "week05/mimi_on_maze01 copy.py",
     "week03/README.md",
-    "week05/mimi_on_maze01.py",
+    "week01/week01_README.pdf",
+    "week01/基本.md",
     "week05/mimi_s.png",
+    "week05/mimi_on_maze03.py",
+    "week05/mimi_on_maze02.py",
+    "week05/mimi_on_maze01.py",
     "week05/mimi.png",
     "week05/cat_move01.py",
-    "week05/test.py",
+    "week05/README.md",
     "week05",
-    "week04/quiz04.py",
     "week04/sumire.png",
+    "week04/quiz04.py",
+    "week04/quiz03.py",
+    "week04/quiz02.py",
+    "week04/quiz01.py",
+    "week04/README.md",
     "week03/miko.png",
     "week03/img.png",
-    "img.png",
-    "img.jpg",
-    "week03/img.jpg",
-    "week03/圖片.jpg",
     "week02/attachments/Pasted image 20250326184801.png",
-    "week01/基本.md",
+    "week01/安裝thonny.md",
+    "week01/attachments/Pasted image 20250324164440.png",
+    "README.md",
     "8051/8051.md",
     "作業系統/作業系統.md",
     "計算機結構組織/計算機結構v2.md",
     "2025就業博覽會.md",
     "計算機結構組織/計算機結構v1.md",
+    "作業系統/attachments/Pasted image 20250310143833.png",
+    "作業系統/attachments/Pasted image 20250306220512.png",
     "未命名.md",
     "Docker/README.md",
     "c++/【12 Introduction to Classes, Objects and Strings】.md",
@@ -205,6 +204,7 @@
     "Docker/Nodejs App Start Setup/node_modules/statuses/HISTORY.md",
     "Docker/Nodejs App Start Setup/node_modules/side-channel/CHANGELOG.md",
     "Docker/Nodejs App Start Setup/node_modules/toidentifier/README.md",
-    "Docker/Nodejs App Start Setup/node_modules/side-channel/README.md"
+    "Docker/Nodejs App Start Setup/node_modules/side-channel/README.md",
+    "c++/leetcode題目/attachments/20241106_112148821_iOS.png"
   ]
 }
