@@ -4,39 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "f059787bcabe9c64",
+        "id": "330008c9a6bd3eb1",
         "type": "tabs",
         "children": [
           {
-            "id": "a90fe6f494649a92",
+            "id": "c6db23221a2f29f0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "week01/南工基礎Python教學--week01.md",
+                "file": "week02/南工基礎Python教學--week02--解答版.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "南工基礎Python教學--week01"
-            }
-          },
-          {
-            "id": "4341e58c2448aadc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "week02/南工基礎Python教學--week02.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "南工基礎Python教學--week02"
+              "title": "南工基礎Python教學--week02--解答版"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -93,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 319.5024719238281
   },
   "right": {
     "id": "8d7f124c8bc7eb67",
@@ -153,13 +138,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "week02/南工基礎Python教學--week02.md",
+                "file": "week02/南工基礎Python教學--week02--解答版.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "南工基礎Python教學--week02 的大綱"
+              "title": "南工基礎Python教學--week02--解答版 的大綱"
             }
           }
         ],
@@ -167,7 +152,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 326.5
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -179,12 +164,15 @@
       "command-palette:開啟命令面板": false
     }
   },
-  "active": "4341e58c2448aadc",
+  "active": "c6db23221a2f29f0",
   "lastOpenFiles": [
+    "week01/南工基礎Python教學--week01--教學版.md",
+    "week02/南工基礎Python教學--week02--解答版.md",
+    "week02/attachments/image.png",
+    "week01/南工基礎Python教學--week01--解答版.md",
+    "week01/attachments/image.png",
     "test.py",
     "tes.py",
-    "week01/南工基礎Python教學--week01.md",
-    "week02/南工基礎Python教學--week02.md",
     "week01/week01_README.pdf",
     "week03/README.md",
     "week01/基本.md",
@@ -199,7 +187,6 @@
     "week04/sumire.png",
     "week04/quiz04.py",
     "week04/quiz03.py",
-    "week04/quiz02.py",
     "week04/README.md",
     "week03/miko.png",
     "week03/img.png",
@@ -213,7 +200,6 @@
     "2025就業博覽會.md",
     "計算機結構組織/計算機結構v1.md",
     "作業系統/attachments/Pasted image 20250310143833.png",
-    "作業系統/attachments/Pasted image 20250306220512.png",
     "未命名.md",
     "Docker/README.md",
     "c++/【12 Introduction to Classes, Objects and Strings】.md",
@@ -224,8 +210,6 @@
     "Docker/Nodejs App Start Setup/node_modules/parseurl/HISTORY.md",
     "Docker/Nodejs App Start Setup/node_modules/statuses/HISTORY.md",
     "Docker/Nodejs App Start Setup/node_modules/side-channel/CHANGELOG.md",
-    "Docker/Nodejs App Start Setup/node_modules/toidentifier/README.md",
-    "Docker/Nodejs App Start Setup/node_modules/side-channel/README.md",
-    "c++/leetcode題目/attachments/20241106_112148821_iOS.png"
+    "Docker/Nodejs App Start Setup/node_modules/toidentifier/README.md"
   ]
 }
