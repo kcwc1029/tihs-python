@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "week02/南工基礎Python教學--week02.md",
+                "file": "week01/南工基礎Python教學--week01--教學版.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "南工基礎Python教學--week02"
+              "title": "南工基礎Python教學--week01--教學版"
             }
           },
           {
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "week02/南工基礎Python教學--week02.md",
+                "file": "week01/南工基礎Python教學--week01--教學版.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "南工基礎Python教學--week02 的大綱"
+              "title": "南工基礎Python教學--week01--教學版 的大綱"
             }
           }
         ],
@@ -180,6 +180,7 @@
   },
   "active": "c6db23221a2f29f0",
   "lastOpenFiles": [
+    "week01/南工基礎Python教學--week01--教學版.pdf",
     "week03/README.md",
     "week02/南工基礎Python教學--week02.md",
     "week01/南工基礎Python教學--week01--解答版.md",
