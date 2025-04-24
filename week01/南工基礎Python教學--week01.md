@@ -1,3 +1,4 @@
+[tlk.io](https://tlk.io/)
 ## 1. 建築科為什麼要學程式、懂電腦？
 
 > （我自己本身對於建築方面的知識為 0，所以這些知識也是我問 GPT 的，不要吉我ＱＱ）
@@ -29,7 +30,7 @@ AutoCAD、SketchUp、Revit 這些工具大家都會用 → 你要更有競爭力
 什麼是數位雙生？：指在電腦裡建一個跟現實建築一模一樣的「虛擬模型」，可以即時監控、模擬、預測真實建築的狀況。
 比 BIM 更進一步：它不只是設計，而是營運中也能持續更新的活資料模型。
 
-![What is a digital twin? |Process Genius|532x299](https://processgenius.fi/wp-content/uploads/2024/03/Genius-Core-background-img-without-logo-1024x576.jpg)
+![What is a digital twin? |Process Genius|646x363](https://processgenius.fi/wp-content/uploads/2024/03/Genius-Core-background-img-without-logo-1024x576.jpg)
 
 ### 1.4. 監控鏡頭與感測器
 
