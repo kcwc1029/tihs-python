@@ -80,7 +80,9 @@ print(len(student))
 
 假設我們要將雷姆（元素）放進 list（你說為什麼要放雷姆？啊，我喜歡 ww）
 
+
 ![upgit_20250401_1743475285.png|219x220](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2025/04/upgit_20250401_1743475285.png)
+
 
 ```python
 student = ["菜月昴","愛蜜莉雅","帕克","雷姆","拉姆","艾姬多娜"]

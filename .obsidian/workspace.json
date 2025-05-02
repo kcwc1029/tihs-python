@@ -25,12 +25,14 @@
             "id": "f5a04452553927e8",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "week02/南工基礎Python教學--week02.pdf"
+                "file": "week03/南工基礎Python教學--week03.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "南工基礎Python教學--week02"
+              "icon": "lucide-file",
+              "title": "南工基礎Python教學--week03"
             }
           },
           {
@@ -165,13 +167,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "week02/南工基礎Python教學--week02.pdf",
+                "file": "week03/南工基礎Python教學--week03.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "南工基礎Python教學--week02 的大綱"
+              "title": "南工基礎Python教學--week03 的大綱"
             }
           }
         ],
@@ -193,17 +195,18 @@
   },
   "active": "f5a04452553927e8",
   "lastOpenFiles": [
-    "week02/南工基礎Python教學--week02.md",
+    "week02_temp/南工基礎Python教學--week02--解答版.md",
+    "week03/南工基礎Python教學--week03.md",
+    "week03",
     "week02/南工基礎Python教學--week02.pdf",
+    "week02/南工基礎Python教學--week02.md",
     "week02",
     "week01_temp/教學版.md",
     "README.md",
     "week01/南工基礎Python教學--week01.md",
     "week01/南工基礎Python教學--week01--教學版.pdf",
-    "week02_temp/南工基礎Python教學--week02.md",
     "week01/南工基礎Python教學--week01.pdf",
     "week01",
-    "week02_temp/南工基礎Python教學--week02--解答版.md",
     "week02_temp/attachments/image.png",
     "week01_temp/南工基礎Python教學--week01--解答版.md",
     "week01_temp/attachments/image.png",
@@ -214,7 +217,6 @@
     "week01/基本.md",
     "week05_temp/mimi_s.png",
     "week05_temp/mimi_on_maze03.py",
-    "week05_temp/mimi_on_maze02.py",
     "week05_temp/mimi.png",
     "week05_temp/README.md",
     "week04_temp/sumire.png",
