@@ -107,7 +107,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 366.50312423706055
+    "width": 201.5
   },
   "right": {
     "id": "8d7f124c8bc7eb67",
@@ -181,7 +181,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 268.5
+    "width": 268.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -195,8 +196,12 @@
   },
   "active": "f5a04452553927e8",
   "lastOpenFiles": [
-    "week02_temp/南工基礎Python教學--week02--解答版.md",
+    "week04/陳縕儂 台大資訊 人工智慧導論.md",
+    "week04/南工week04--初談ML.pptx",
+    "week04/南工week04--初談ML.pdf",
     "week03/南工基礎Python教學--week03.md",
+    "week04",
+    "week02_temp/南工基礎Python教學--week02--解答版.md",
     "week03",
     "week02/南工基礎Python教學--week02.pdf",
     "week02/南工基礎Python教學--week02.md",
@@ -211,12 +216,9 @@
     "week01_temp/南工基礎Python教學--week01--解答版.md",
     "week01_temp/attachments/image.png",
     "test.py",
-    "tes.py",
-    "week01/week01_README.pdf",
     "week03_temp/README.md",
     "week01/基本.md",
     "week05_temp/mimi_s.png",
-    "week05_temp/mimi_on_maze03.py",
     "week05_temp/mimi.png",
     "week05_temp/README.md",
     "week04_temp/sumire.png",
@@ -238,7 +240,6 @@
     "Docker/Nodejs App Start Setup/node_modules/vary/README.md",
     "Docker/Nodejs App Start Setup/node_modules/iconv-lite/README.md",
     "Docker/Nodejs App Start Setup/node_modules/vary/HISTORY.md",
-    "Docker/Nodejs App Start Setup/node_modules/parseurl/HISTORY.md",
-    "Docker/Nodejs App Start Setup/node_modules/statuses/HISTORY.md"
+    "Docker/Nodejs App Start Setup/node_modules/parseurl/HISTORY.md"
   ]
 }
