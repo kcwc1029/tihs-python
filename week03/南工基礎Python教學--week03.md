@@ -748,3 +748,11 @@ import random
 r = random.randint(1,6) # 產出借於1-6之間得整數
 print(r)
 ```
+
+
+
+
+
+
+
+
