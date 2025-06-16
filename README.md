@@ -6,4 +6,4 @@
 | 05/23 | [南工 初談 ML--week04](https://docs.google.com/presentation/d/19CQn2ulBRshD11picGMtPIlDtIPpwrs-/edit?usp=sharing&ouid=102419528203770620407&rtpof=true&sd=true) |
 | 06/06 | [南工 ML--week05](https://docs.google.com/presentation/d/1DpBxlhUq1QAD1DOqcahyKw835XLMCUpf/edit?usp=sharing&ouid=102419528203770620407&rtpof=true&sd=true)      |
 | 06/13 | [南工 ML--week06](https://docs.google.com/presentation/d/1byzZ8MGEO7QDYSEYMoZaGrF9G-6_3k1v/edit?usp=sharing&ouid=102419528203770620407&rtpof=true&sd=true)      |
-| 06/20 |                                                                                                                                                                 |
+| 06/20 | [南工 ML--week07](https://docs.google.com/presentation/d/1Ybwtts9_J3qGjWjhWa0JMepr4El69eti/edit?usp=sharing&ouid=102419528203770620407&rtpof=true&sd=true)      |
